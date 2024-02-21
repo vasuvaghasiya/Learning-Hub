@@ -1,0 +1,59 @@
+
+body{
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+/* background img */
+body::after{
+    background: url(/images/home_background.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+ 
+}
+/* navigation search  */
+
+.search{
+    margin-right: 80px;
+}
+/* join for free and login button */
+.btn-jff{
+    margin-left: 20px;
+    margin-right:20px;
+}
+.nav-btn{
+    cursor: pointer;
+}
+
+#main-container{
+    position: absolute;
+    text-align: center;
+    margin-top: 20px;
+    padding: 30px;
+    left: 23%;
+    
+}
+#h1{
+    font-size: 32px;
+}
+#HomePara{
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    right: 25%;
+    left: 25%;
+    text-align: center;
+}
+#id ,#registration{
+    list-style: none;
+    text-decoration: none;
+}

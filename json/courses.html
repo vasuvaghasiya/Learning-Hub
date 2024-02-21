@@ -1,0 +1,83 @@
+<html >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cources</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      *{
+        font-family:'Poppins', Arial, sans-serif;
+      }
+      table{
+      
+        width: 80%;
+        border-collapse: collapse;
+        text-align: center;
+        font-size: 22px;
+      }
+      #btn{
+        
+        height: 30px;
+        width: 200px;
+        font-size: 16px;
+        border: 1px solid #000;
+        border-radius: 5px;
+    
+      }
+      
+    </style>
+  </head>
+  <body>
+    <button id="btn">Fetch Courses </button>
+      <table id="course-table" border="1">
+        <thead id="course-heading">
+          <tr id="cource-row">
+            <th >cname</th>
+            <th >cimage</th>
+            <th >description</th>
+            <th >price</th>
+          </tr>
+        </thead>
+        <tbody id="data-output">
+  
+        </tbody>
+      </table>
+
+
+
+    <script src="/jquery/jQuery.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#btn").click(function(){
+          fetch("data.json")
+          .then((response) => response.json())
+          .then((cources) => {
+            let placeHolder = document.querySelector("#data-output");
+            let out = "";
+            for (let cource of cources) {
+              out += `
+              <tr>
+                <td>${cource.cname}</td>
+                <td><img src='${cource.cimage}' width=180px > </td>
+                <td>${cource.description}</td>
+                <td>${cource.price}</td>
+                <td><button style='cursor:pointer' onclick="location.href='/registration.html'">BuyNow</button>
+              </tr>
+            `;
+            }
+            out += "</tbody></table>";
+            document.getElementById("data-output").innerHTML = out;
+          })
+          .catch((error) => {
+            console.error("Error fetching data: ", error);
+          });
+      
+      })
+      
+      })
+         
+    </script>
+  </body>
+</html>

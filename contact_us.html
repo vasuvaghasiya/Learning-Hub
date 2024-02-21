@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us</title>
+ 
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*
+         .background-img{
+            background: url(images/contact_us.jpg) ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            z-index: -1;
+        }
+         */
+         body{
+           
+            background-color: lightblue; 
+
+         }
+        .contact-form{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+        }
+        .main-heading,.sub-heading{
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container mt-5 contact-form">
+        <h1 class="main-heading">Get in touch with us</h1>
+        <h3 class="sub-heading">Send us Message</h3>
+        
+        <form >
+            <div class="form-group">
+                <label for="fname">First name</label>
+                <input type="text" class="form-control" id="fname" placeholder="Enter your first name">
+            </div>
+            <div class="form-group">
+                <label for="lname">Last name</label>
+                <input type="text" class="form-control" id="lname" placeholder="Enter your first name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+           
+            
+            <div class="form-group">
+              <label for="textarea">Message</label>
+              <textarea class="form-control" id="textarea" rows="3"></textarea>
+            </div>
+          </form>
+        <button type="button" class="btn btn-primary" name="send " id="send" onclick="send()">Send</button>        
+    </div>
+    <script>
+        function send(){
+            alert("Your Message Successfully Send" ,location.href="home.html");
+        }
+    </script>
+</body>
+
+</html>

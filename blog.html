@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <style>
+        .g{
+            
+        }
+    </style>
+</head>
+<body>
+
+<div id="blog_posts"></div>
+
+<script src="jquery/jQuery.js"></script>
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            type: "GET",
+            url: "blog.xml",
+            dataType: "xml",
+            success: function(xml){
+                $(xml).find('post').each(function(){
+                    var title = $(this).find('title').text();
+                    var author = $(this).find('author').text();
+                    var date = $(this).find('date').text();
+                    var content = $(this).find('content').text();
+                    
+                    var postHTML = '<div class="post">';
+                    postHTML += '<h2 style="background-color:lightblue">' + title + '</h2>';
+                    postHTML += '<p><strong>Author:</strong> ' + author + '</p>';
+                    postHTML += '<p><strong>Date:</strong> ' + date + '</p>';
+                    postHTML += '<p>' + content + '</p>';
+                    postHTML += '</div>'+'<hr>';
+
+                    $('#blog_posts').append(postHTML);
+                });
+            },
+            error: function(){
+                $('#blog_posts').html('<p>Error loading blog posts.</p>');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " id="my-nav">
+        <a class="navbar-brand" href="home.html">LearningHub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link nav-btn" onclick="homeRedirect()">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn" href="/json/courses.html">Courses</a>
+                </li>
+                <li class="nav-item nav-btn">
+                    <a class="nav-link " onclick="about()">About Us</a>
+                </li>
+                <li class="nav-item nav-btn">
+                    <a class="nav-link " onclick="contact_us()">Contact_Us</a>
+                </li>
+                <li class="nav-item nav-btn">
+                    <a class="nav-link " onclick="location.href='blog.html'">Blog</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 search">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search for Courses" aria-label="Search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <button class="btn btn-outline-success btn-login" onclick="location.href='login.html'" >Login</button>
+            <button class="btn btn-outline-primary btn-jff" onclick="location.href='registration.html'">Join For Free</button>
+        </div>
+    </nav>
+
+    <div id="main-container">
+        <h1 id="h1">Get a head start on your <b style="color:green">journy</b></h1>
+        <p class="HomePara">
+            Discover multiple programs with flexible learning pathways that enable you to make progress even before you enroll.
+        </p>
+    </div>
+   
+    <footer>
+        <p>Mobile Number : 9909072081</p>
+        <p>&copy; 2024 LearningHub Inc. All rights reserved.</p>
+    </footer>
+    
+</body>
+
+<script src="js/index.js"></script>
+<script src="jquery/jQuery.js"></script>
+
+
+</html>
