@@ -42,7 +42,7 @@
                 <img src="/images/about_vision.webp" alt="" width="400px" ">
             </div>
             <div class="col-sm-6 col-3">
-                <p class="ml-5">LearningHub is the online learning platform from world-leading digital education company 2U, Inc.
+                <p class="ml-5" id="first-content">LearningHub is the online learning platform from world-leading digital education company 2U, Inc.
 
                     LearningHub was founded by Harvard and MIT as an experiment to make the worlds best education available to everyone. Today, as part of 2U, edX connects over 83 million people worldwide with online learning that delivers real professional progress across nearly every career discipline, from artificial intelligence and robotics to sustainability and public health. Together with universities and organizations at the forefront of their fields, edX offers thousands of j</p>
             </div>
@@ -52,7 +52,7 @@
         <h3 id="second-heading">Delivering world-class learning outcomes at scale</h1>
             <div class="row">
                 <div class="col-sm-6">
-                    <p style=" font-weight: bolder;">Guided by our founding mission to eliminate the back row in higher education, 2U has spent over 15 years advancing the technology and innovation to deliver world-class learning outcomes at scale. In 2021, 2U acquired edX to create a global online learning platform that has delivered life-changing learning experiences to millions of people worldwide.<br><br>Today, under the leadership of 2U CEO Paul Lalljie and edX Founder and 2U Chief Academic Officer Anant Agarwal, edX connects millions of people with affordable, career-relevant learning opportunities.
+                    <p style=" font-weight: bolder;" id="econd-content">Guided by our founding mission to eliminate the back row in higher education, 2U has spent over 15 years advancing the technology and innovation to deliver world-class learning outcomes at scale. In 2021, 2U acquired edX to create a global online learning platform that has delivered life-changing learning experiences to millions of people worldwide.<br><br>Today, under the leadership of 2U CEO Paul Lalljie and edX Founder and 2U Chief Academic Officer Anant Agarwal, edX connects millions of people with affordable, career-relevant learning opportunities.
                 
                 </p>
                 </div>
@@ -71,11 +71,9 @@
             });
 
             $("#second-heading").click(function () {
-                $("#second-content ").slideToggle("slow");
+                $("#second-content").slideToggle("slow");
             });
-            $("#third-heading").click(function () {
-                $("#third-content").slideToggle("slow");
-            });
+          
 
         });
     </script>
