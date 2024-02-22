@@ -49,7 +49,7 @@ $(document).ready(function(){
       }
       if (validation_holder == 0) {
         // else return true
-        alert(email + ", You have registered successfully",location.href="home.html");
+        alert(email + ", You have registered successfully",location.href="index.html");
       }
     });
   });
