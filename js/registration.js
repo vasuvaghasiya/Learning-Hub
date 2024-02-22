@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#submit").click(function () {
       var validation_holder = 0;
-      var email = $("form#lregister_form input[name='email']").val();
+      var email = $("form#register_form input[name='email']").val();
       var email_regex = /^[\w%_\-.\d]+@[\w.\-]+.[A-Za-z]{2,6}$/; // reg ex email check
 
       var password = $("form#register_form input[name='password']").val();
