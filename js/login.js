@@ -42,7 +42,7 @@ $(document).ready(function(){
       }
       if (validation_holder == 0) {
         // else return true
-        alert("successfully login !!! ",location.href="home.html");
+        alert("successfully login !!! ",location.href="index.html");
       }
     });
   });

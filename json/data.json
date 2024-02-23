@@ -31,28 +31,6 @@
         "description":"Object-oriented, client-optimized, language for building apps.",
         "price":2500
         
-    },
-    {
-        "cname":"java",
-        "cimage":"/images/java.jpeg",
-        "description":"High-level, object-oriented, widely-used programming language. ",
-        "price":5500
-        
-    },
-    {
-        "cname":"php",
-        "cimage":"/images/php.png",
-        "description":"Server-side scripting language for web development. ",
-        "price":2400
-        
-    },
-    {
-        "cname":"node-js",
-        "cimage":"/images/node_js.webp",
-        "description":"Server-side, event-driven, JavaScript runtime.",
-        "price":2400
-        
     }
-
 ]
 

@@ -36,22 +36,5 @@
         <date>2023-10-25</date>
         <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum varius felis, et commodo magna tristique ut. Ut suscipit turpis id libero ultricies, id tempor arcu faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ut lorem a mi maximus faucibus. Aenean eu est sit amet nulla laoreet finibus eu et turpis. Cras sit amet libero sed lorem dapibus facilisis. Donec fermentum nisl eget metus ultrices aliquet.</content>
     </post>
-    <post>
-        <title>Understanding Blockchain Technology</title>
-        <author>Robert Clark</author>
-        <date>2023-11-12</date>
-        <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum varius felis, et commodo magna tristique ut. Ut suscipit turpis id libero ultricies, id tempor arcu faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ut lorem a mi maximus faucibus. Aenean eu est sit amet nulla laoreet finibus eu et turpis. Cras sit amet libero sed lorem dapibus facilisis. Donec fermentum nisl eget metus ultrices aliquet.</content>
-    </post>
-    <post>
-        <title>Essential Skills for Data Analysts</title>
-        <author>Amy Taylor</author>
-        <date>2023-12-08</date>
-        <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum varius felis, et commodo magna tristique ut. Ut suscipit turpis id libero ultricies, id tempor arcu faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ut lorem a mi maximus faucibus. Aenean eu est sit amet nulla laoreet finibus eu et turpis. Cras sit amet libero sed lorem dapibus facilisis. Donec fermentum nisl eget metus ultrices aliquet.</content>
-    </post>
-    <post>
-        <title>Building Responsive Web Design</title>
-        <author>Kevin Adams</author>
-        <date>2024-01-20</date>
-        <content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum varius felis, et commodo magna tristique ut. Ut suscipit turpis id libero ultricies, id tempor arcu faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ut lorem a mi maxim</content>
-    </post>
+    
 </blog>

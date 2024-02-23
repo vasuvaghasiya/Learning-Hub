@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+</head>
+<link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body{
+            background: url(images/about_us_img.jpg) no-repeat center center/cover;
+
+        }
+        .main-con{
+            margin-top: 100px;
+            text-align: center;
+            font-weight: bolder;
+            text-transform: uppercase;
+            
+        }
+        #first-heading{
+            margin-bottom: 30px;
+            text-decoration: underline;
+
+        }
+        #second-heading{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+
+           
+            text-transform: uppercase;
+        }
+        
+    </style>
+<body>
+    <div class="container main-con">
+        <h1 id="first-heading">About Us</h1>
+        <div class="row">
+            <div class="col-sm-4 ">
+                <img src="/images/about_vision.webp" alt="" width="400px" ">
+            </div>
+            <div class="col-sm-6 col-3">
+                <p class="ml-5" id="first-content">LearningHub is the online learning platform from world-leading digital education company 2U, Inc.
+
+                    LearningHub was founded by Harvard and MIT as an experiment to make the worlds best education available to everyone. Today, as part of 2U, edX connects over 83 million people worldwide with online learning that delivers real professional progress across nearly every career discipline, from artificial intelligence and robotics to sustainability and public health. Together with universities and organizations at the forefront of their fields, edX offers thousands of j</p>
+            </div>
+        </div>        
+    </div>
+    <div class="container">
+        <h3 id="second-heading">Delivering world-class learning outcomes at scale</h1>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p style=" font-weight: bolder;" id="econd-content">Guided by our founding mission to eliminate the back row in higher education, 2U has spent over 15 years advancing the technology and innovation to deliver world-class learning outcomes at scale. In 2021, 2U acquired edX to create a global online learning platform that has delivered life-changing learning experiences to millions of people worldwide.<br><br>Today, under the leadership of 2U CEO Paul Lalljie and edX Founder and 2U Chief Academic Officer Anant Agarwal, edX connects millions of people with affordable, career-relevant learning opportunities.
+                
+                </p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="images/about_us_std.png" alt="" width="250px">
+                </div>
+            </div>
+    </div>
+    
+
+    <script src="jquery/jQuery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#first-heading").click(function () {
+                $("#first-content").slideToggle("slow");
+            });
+
+            $("#second-heading").click(function () {
+                $("#second-content").slideToggle("slow");
+            });
+          
+
+        });
+    </script>
+</body>
+
+</html>
